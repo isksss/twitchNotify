@@ -9,7 +9,8 @@ import (
 )
 
 type Config struct {
-	DiscordBotToken string `toml:"discord_bot_token"`
+	DiscordBotToken string   `toml:"discord_bot_token"`
+	Usernames       []string `toml:"username"`
 }
 
 // Load reads config from $XDG_CONFIG_HOME/twitchNotify/config.toml
